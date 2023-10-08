@@ -13,17 +13,28 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: lightgray;
+            
         }
 
         #controls {
-            padding: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            margin-left: auto;
+            text-align: center;
+            background-color: lightslategray;
+            border-radius: 8px;
         }
         
         #container {
             display: grid;
-            grid-template-columns: repeat(16, 30px);
+            grid-template-columns: repeat(24, 30px);
             grid-gap: 1px;
-            margin: 20px auto;
+            margin-left: 30px;
+            margin-right: auto;
         }
 
         .grid-item {
@@ -40,19 +51,9 @@
 
 </head>
 <body>
-    <div id="controls">
-        <label for="grid-size">Grid Size:</label>
-        <input type="number" id="grid-size" max="100">
-        <button id="create-grid">Create Grid</button><br><br>
-        
-        <label for="bg-color">Background Color:</label>
-        <input type="color" id="bg-color">
-        <button id="apply-bg-color">Apply BG Color</button><br><br>
-        
-        <label for="pixel-color">Pixel Color:</label>
-        <input type="color" id="pixel-color">
-        <button id="apply-pixel-color">Apply Pixel Color</button><br><br>
-        
+    <div id="controls">  
+        <h1>Doodle-Ma-Bob</h1> 
+        <h2>Write your initials, or just doodle.</h2>              
         <button id="clear-grid">Clear Grid</button>
     </div>
     <div id="container"></div>
